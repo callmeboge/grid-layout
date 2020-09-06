@@ -1,0 +1,32 @@
+.container{
+  display: grid;
+  background-color: beige;
+  border: 1px dotted navy;
+ grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px;
+grid-template-areas: "header header header"
+                    "main main aside"
+                    "footer footer footer";
+}
+
+.item{
+  background-color: black;
+  border: 1px solid white; 
+}
+
+.item-a{
+  grid-area: header;
+}
+
+.item-b{
+  grid-area: main;
+  
+}
+
+.item-c{
+  grid-area: aside;
+}
+
+.item-d{
+  grid-area: footer;
+}
